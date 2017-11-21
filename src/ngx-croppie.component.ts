@@ -7,6 +7,7 @@ export type Type = 'canvas' | 'base64' | 'html' | 'blob' | 'rawcanvas';
 
 export interface TempResultOptions extends ResultOptions {
     type?: Type;
+    size?: any;
 }
 
 @Component({
