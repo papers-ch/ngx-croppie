@@ -21,7 +21,7 @@ export class NgxCroppieComponent implements OnInit {
     @Input() outputFormatOptions: TempResultOptions = { type: 'base64', size: 'viewport' };
     @Output() result: EventEmitter<string | HTMLElement | Blob | HTMLCanvasElement> = new EventEmitter<string | HTMLElement | Blob | HTMLCanvasElement>();
 
-    private _croppie: Croppie;
+    public _croppie: Croppie;
     ngOnInit(): void {
         this._croppie = new Croppie(this.imageEdit.nativeElement, this.croppieOptions);
 
